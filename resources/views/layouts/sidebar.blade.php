@@ -20,8 +20,9 @@
         <ul class="space-y-2 px-4">
             <!-- Dashboard -->
             <li class="min-h-[56px] flex items-center">
-                <a href="/dashboard"
-                    class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out text-[#0E335D] hover:text-[#0B294A] active:text-[#0E335D]/80 hover:bg-gray-100">
+                <a href="{{ route('dashboard') }}"
+                    class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out
+       {{ request()->routeIs('dashboard') ? 'bg-[#234D7C] text-white' : 'text-[#0E335D] hover:text-[#0B294A] hover:bg-gray-100' }}">
                     <i class="fas fa-home text-lg"></i>
                     <span
                         class="font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out whitespace-nowrap overflow-hidden">
@@ -32,8 +33,9 @@
 
             <!-- Hiring & Onboarding -->
             <li class="min-h-[56px] flex items-center">
-                <a href="/hiring-onboarding"
-                    class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out text-[#0E335D] hover:text-[#0B294A] active:text-[#0E335D]/80 hover:bg-gray-100">
+                <a href="{{ route('hiring_onboarding.index') }}"
+                    class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out
+       {{ request()->routeIs('hiring_onboarding.index') ? 'bg-[#234D7C] text-white' : 'text-[#0E335D] hover:text-[#0B294A] hover:bg-gray-100' }}">
                     <i class="fas fa-user-check text-lg"></i>
                     <span
                         class="font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out whitespace-nowrap overflow-hidden">
@@ -44,8 +46,9 @@
 
             <!-- Employees -->
             <li class="min-h-[56px] flex items-center">
-                <a href="/employees"
-                    class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out text-[#0E335D] hover:text-[#0B294A] active:text-[#0E335D]/80 hover:bg-gray-100">
+                <a href="{{ route('emp_management') }}"
+                    class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out
+       {{ request()->routeIs('emp_management') ? 'bg-[#234D7C] text-white' : 'text-[#0E335D] hover:text-[#0B294A] hover:bg-gray-100' }}">
                     <i class="fas fa-users text-lg"></i>
                     <span
                         class="font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out whitespace-nowrap overflow-hidden">
@@ -53,10 +56,12 @@
                     </span>
                 </a>
             </li>
+
             <!-- GLS Scheduling -->
             <li class="min-h-[56px] flex items-center">
-                <a href="/scheduling"
-                    class="flex items-center space-x-3 w-full px-4 py-3 text-white bg-[#234D7C] rounded-lg transition-all duration-300 ease-in-out hover:bg-[#033f92] active:bg-[#023873]">
+                <a href="{{ route('schedules.index') }}"
+                    class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out
+       {{ request()->routeIs('schedules.index') ? 'bg-[#234D7C] text-white' : 'text-[#0E335D] hover:text-[#0B294A] hover:bg-gray-100' }}">
                     <i class="fas fa-calendar-alt text-lg"></i>
                     <span
                         class="font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out whitespace-nowrap overflow-hidden">

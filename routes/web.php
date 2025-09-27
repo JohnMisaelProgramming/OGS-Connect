@@ -26,6 +26,7 @@ Route::get('/application-form/submit', function () {
 })->name('application.form.submit');
 
 //APPLICATION FORM ROUTES END
+
 Route::get('/scheduling', function () {
     return view('schedules.index');
 })->name('schedules.index');
@@ -35,8 +36,20 @@ Route::get('/class-scheduling', function () {
 })->name('class-scheduling');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+    return view('dashboard.dashboard');
+})->name('dashboard');
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/hiring-onboarding', function () {
+    return view('hiring_onboarding.index');
+})->name('hiring_onboarding.index');
+
+Route::get('/emp_management', function () {
+    return view('emp_management.index');
+})->name('emp_management');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

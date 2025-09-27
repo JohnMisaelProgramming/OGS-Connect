@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Header -->
-    @include('layouts.header', ['pageTitle' => 'Dashboard'])
+    @include('layouts.header', ['pageTitle' => 'Employee Management'])
 
 
 @endsection
