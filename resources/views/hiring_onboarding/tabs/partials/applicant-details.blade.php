@@ -1,6 +1,17 @@
+<!-- Back Button -->
+<div class="mb-4 flex justify-end">
+    <a href="{{ route('hiring_onboarding.index', ['tab' => 'new']) }}"
+       class="flex items-center space-x-2 px-4 py-2 bg-[#606979] text-white rounded-full text-sm font-medium 
+              hover:bg-[#4f5a66] transform transition duration-200 hover:scale-105"
+       style="width: 200px; justify-content: center;">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back</span>
+    </a>
+</div>
+
 <!-- Form Header -->
 <div class="bg-[#65DB7F] shadow-lg text-[#0E335D] font-bold text-center text-2xl rounded-md py-3 mb-6">
-    APPLICATION FORM
+    APPLICANT DETAILS 
 </div>
 
 <!-- Form Container -->
