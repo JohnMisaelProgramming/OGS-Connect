@@ -45,17 +45,16 @@
             </li>
 
             <!-- Employees -->
-            <li class="min-h-[56px] flex items-center">
-                <a href="{{ route('emp_management') }}"
-                    class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out
-       {{ request()->routeIs('emp_management') ? 'bg-[#234D7C] text-white' : 'text-[#0E335D] hover:text-[#0B294A] hover:bg-gray-100' }}">
-                    <i class="fas fa-users text-lg"></i>
-                    <span
-                        class="font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out whitespace-nowrap overflow-hidden">
-                        Employees
-                    </span>
-                </a>
-            </li>
+            <a href="{{ route('emp_management.index') }}"
+                class="flex items-center space-x-3 w-full px-4 py-3 rounded-lg transition-all duration-300 ease-in-out
+       {{ request()->routeIs('emp_management.index') ? 'bg-[#234D7C] text-white' : 'text-[#0E335D] hover:text-[#0B294A] hover:bg-gray-100' }}">
+                <i class="fas fa-users text-lg"></i>
+                <span
+                    class="font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out whitespace-nowrap overflow-hidden">
+                    Employees
+                </span>
+            </a>
+
 
             <!-- GLS Scheduling -->
             <li class="min-h-[56px] flex items-center">

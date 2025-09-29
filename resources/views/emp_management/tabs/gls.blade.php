@@ -1,6 +1,6 @@
 <!-- Page Title -->
 <div class="p-4 border-b border-gray-200">
-    <h2 class="text-xl font-bold text-gray-800">Employee Availability</h2>
+    <h2 class="text-xl font-bold text-[#0E335D]">GLS Account</h2>
 </div>
 <!-- Search Filters -->
 <div class="p-6 border-b border-gray-200">
@@ -41,25 +41,30 @@
     <table class="w-full">
         <thead class="bg-gray-50 border-b border-gray-200">
             <tr>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date Hired</th>
                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phone Number
-                </th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phone Number</th>
                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
-                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Available
-                    Time</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Payment Method</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">GLS Tutor ID</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Username</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Available Time</th>
                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
             </tr>
         </thead>
         <tbody class="bg-white divide-y divide-gray-200">
             <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2023-06-15</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Josh Daniel Collins</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">09477789871</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 underline">jc.921@gmail.com</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PayPal</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">GLS-001</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">jcollins</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mon - Fri | 7 AM - 3 PM</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
                     <button class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded hover:bg-yellow-200 transition-colors">
@@ -70,14 +75,18 @@
                     </button>
                 </td>
             </tr>
+
             <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2023-07-10</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nidal Kendrick</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">09789998767</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 underline">nidal@gmail.com</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">GCash</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">GLS-002</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">nkendrick</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mon - Wed | 7 AM - 4 PM</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Inactive</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Inactive</span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
                     <button class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded hover:bg-yellow-200 transition-colors">
@@ -88,14 +97,18 @@
                     </button>
                 </td>
             </tr>
+
             <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2023-08-01</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Kageyam Lazola</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">09775456351</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 underline">lazola.k@gmail.com</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Payoneer</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">GLS-003</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">klazola</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mon - Fri | 10 AM - 3 PM</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
                     <button class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded hover:bg-yellow-200 transition-colors">
@@ -106,14 +119,18 @@
                     </button>
                 </td>
             </tr>
+
             <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2023-09-05</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">John Doe</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">09886536455</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 underline">j.d@gmail.com</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Bank Transfer</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">GLS-004</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">jdoe</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tue - Wed | 7 AM - 3 PM</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
                     <button class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded hover:bg-yellow-200 transition-colors">
@@ -127,6 +144,8 @@
         </tbody>
     </table>
 </div>
+
+
 <!-- Pagination -->
 <div class="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
     <div class="text-sm text-gray-500">

@@ -49,7 +49,7 @@ Route::get('/hiring-onboarding', function () {
 
 Route::get('/emp_management', function () {
     return view('emp_management.index');
-})->name('emp_management');
+})->name('emp_management.index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

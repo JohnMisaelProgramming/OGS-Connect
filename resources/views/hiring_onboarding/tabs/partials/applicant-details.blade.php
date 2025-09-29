@@ -1,9 +1,9 @@
 <!-- Back Button -->
 <div class="mb-4 flex justify-end">
     <a href="{{ route('hiring_onboarding.index', ['tab' => 'new']) }}"
-       class="flex items-center space-x-2 px-4 py-2 bg-[#606979] text-white rounded-full text-sm font-medium 
+        class="flex items-center space-x-2 px-4 py-2 bg-[#606979] text-white rounded-full text-sm font-medium 
               hover:bg-[#4f5a66] transform transition duration-200 hover:scale-105"
-       style="width: 200px; justify-content: center;">
+        style="width: 200px; justify-content: center;">
         <i class="fas fa-arrow-left"></i>
         <span>Back</span>
     </a>
@@ -11,7 +11,7 @@
 
 <!-- Form Header -->
 <div class="bg-[#65DB7F] shadow-lg text-[#0E335D] font-bold text-center text-2xl rounded-md py-3 mb-6">
-    APPLICANT DETAILS 
+    APPLICANT DETAILS
 </div>
 
 <!-- Form Container -->
@@ -236,13 +236,19 @@
                         </div>
                     </div>
 
-                    <!-- CALL BUTTON slightly higher from bottom -->
-                    <div class="flex mt-6 mb-4">
+                    <!-- CALL BUTTON -->
+                    <div x-data="{ showModal: false, showProgress: false }" class="flex mt-6 mb-4">
                         <button type="button"
-                            class="w-full px-6 py-2 rounded-full bg-[#636363] text-white hover:opacity-90">
+                            class="w-full px-6 py-2 rounded-full bg-[#636363] text-white hover:opacity-90"
+                            @click="showModal = true">
                             CALL
                         </button>
+
+                        @include('hiring_onboarding.tabs.partials.modals.call_mdl', [
+                            'fullName' => 'Ivan Josh Dumadapat',
+                        ])
                     </div>
+
                 </div>
             </div>
         </div>

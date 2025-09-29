@@ -37,7 +37,7 @@
 
             <!-- Desktop Buttons -->
             <div class="hidden sm:flex items-center space-x-4">
-                <a>
+                <a href="{{ route('landing') }}">
                     <button
                         class="px-6 text-xs py-2 border border-ogs-navy text-ogs-navy rounded-full hover:bg-ogs-navy hover:text-white transition-colors">
                         HOME
@@ -85,7 +85,7 @@
         });
     </script>
 
-    <main class="max-w-full mx-auto p-6 sm:p-8 bg-gray-50">
+    <main class="max-w-7xl mx-auto p-6 sm:p-8 bg-gray-50">
         <!-- Form Header -->
         <div class="bg-ogs-green shadow-lg text-ogs-dark-navy font-bold text-center text-2xl rounded-md py-3 mb-6">
             APPLICATION FORM

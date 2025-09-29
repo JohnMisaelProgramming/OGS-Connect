@@ -1,7 +1,8 @@
 <!-- Page Title -->
 <div class="p-4 border-b border-gray-200">
-    <h2 class="text-xl font-bold text-gray-800">Employee Availability</h2>
+    <h2 class="text-xl font-bold text-[#E6B800]">Tutlo Account</h2>
 </div>
+
 <!-- Search Filters -->
 <div class="p-6 border-b border-gray-200">
     <div class="flex items-center justify-between mb-4">
@@ -16,7 +17,6 @@
                     class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md text-sm 
               focus:outline-none focus:border-[0.5px] focus:border-[#2A5382] 
               focus:ring-0 focus:shadow-xl">
-
             </div>
             <select class="border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-600 bg-white">
                 <option>Status</option>
@@ -41,25 +41,33 @@
     <table class="w-full">
         <thead class="bg-gray-50 border-b border-gray-200">
             <tr>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date Hired</th>
                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phone Number
-                </th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phone Number</th>
                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
-                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Available
-                    Time</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Payment Method</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Work Setup</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">First Day of Teaching</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Educational Attainment</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Available Time</th>
                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
             </tr>
         </thead>
         <tbody class="bg-white divide-y divide-gray-200">
+            <!-- Row 1 -->
             <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Jan 5, 2022</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Josh Daniel Collins</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">09477789871</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 underline">jc.921@gmail.com</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">PayPal</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">WFH</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Jan 10, 2022</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Bachelor’s Degree</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mon - Fri | 7 AM - 3 PM</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
                     <button class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded hover:bg-yellow-200 transition-colors">
@@ -70,14 +78,20 @@
                     </button>
                 </td>
             </tr>
+
+            <!-- Row 2 -->
             <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Feb 1, 2023</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Nidal Kendrick</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">09789998767</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 underline">nidal@gmail.com</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">GCash</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">WAS</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Feb 14, 2023</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Master’s Degree</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mon - Wed | 7 AM - 4 PM</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Inactive</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Inactive</span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
                     <button class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded hover:bg-yellow-200 transition-colors">
@@ -88,14 +102,20 @@
                     </button>
                 </td>
             </tr>
+
+            <!-- Row 3 -->
             <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mar 1, 2021</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Kageyam Lazola</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">09775456351</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 underline">lazola.k@gmail.com</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Payoneer</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">WFH</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mar 5, 2021</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Bachelor’s Degree</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mon - Fri | 10 AM - 3 PM</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
                     <button class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded hover:bg-yellow-200 transition-colors">
@@ -106,14 +126,20 @@
                     </button>
                 </td>
             </tr>
+
+            <!-- Row 4 -->
             <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mar 25, 2020</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">John Doe</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">09886536455</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-blue-600 underline">j.d@gmail.com</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Bank Transfer</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">WAS</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Apr 1, 2020</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Doctorate</td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tue - Wed | 7 AM - 3 PM</td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                    <span
-                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm space-x-2">
                     <button class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded hover:bg-yellow-200 transition-colors">
@@ -127,6 +153,8 @@
         </tbody>
     </table>
 </div>
+
+
 <!-- Pagination -->
 <div class="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
     <div class="text-sm text-gray-500">
